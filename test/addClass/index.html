@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>addClass</title>
+    <script src="../../jquery.js"></script>
+</head>
+<body>
+<div class="">123</div>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li class="demo demo2 demo3">5</li>
+</ul>
+<script>
+    $('div').addClass('demo1 demo2 demo3');
+    $('ul li:last').addClass(function (index, currentClass) {
+      console.log(currentClass)
+      return 'item' + index
+    })
+</script>
+</body>
+</html>

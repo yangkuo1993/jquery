@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>:after</title>
+    <script src="../../jquery.js"></script>
+</head>
+<body>
+<p class="demo222"></p>
+<script>
+    // $('.inner').after(function (index, content) {
+    //   console.log(index);
+    //   console.log(content)
+    // })
+    // $('.container').after($('h2'));
+    // $('p').after(function () {
+    //   return "<div>" + this.className + "</div>"
+    // })
+    var $newdiv1 = $( "<div id='object1'></div>" ),
+      newdiv2 = document.createElement( "div" ),
+      existingdiv1 = document.getElementById( "foo" );
+
+    $( "p" ).first().after( $newdiv1, [ newdiv2, existingdiv1 ] );
+    /*
+    * index 索引
+    * content内容
+    * */
+</script>
+</body>
+</html>
