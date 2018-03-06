@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>attr</title>
+    <script src="../../jquery.js"></script>
+</head>
+<body>
+<p>
+    Once there was a <em title="huge, gigantic">large</em> dinosaur...
+</p>
+<p>
+    Once there was a <em title="huge, gigantic">large</em> dinosaur...
+</p>
+<p>
+    Once there was a <em title="huge, gigantic">large</em> dinosaur...
+</p>
+<p>
+    Once there was a <em title="huge, gigantic">large</em> dinosaur...
+</p>
+
+The title of the emphasis is:<div></div>
+<script>
+    // var title = $('em').attr('title');
+    // $('div').text(title)
+    // $('em').attr({
+    //   title: '测试',
+    //   wocao: 'wocao'
+    // })
+    $('em').attr('title', function(i, val){
+      console.log(i)
+      console.log(val)
+      return val + ' - photo by Kelly Clark'
+    })
+</script>
+</body>
+</html>

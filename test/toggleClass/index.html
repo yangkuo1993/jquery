@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>toggleClass</title>
+    <script src="../../jquery.js"></script>
+    <style>
+        .demo1{
+            color: #f0f00f;
+        }
+        .demo2{
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo">1234</div>
+    <button>测试啊</button>
+    <script>
+        $('button').click(function () {
+          $('div.demo').toggleClass()
+        })
+    </script>
+</body>
+</html>
